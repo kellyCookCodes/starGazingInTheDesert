@@ -1,0 +1,450 @@
+html {
+    box-sizing: border-box;
+}
+
+/*variable font from google*/
+.edu-vic-wa-nt-beginner-under-stars {
+  font-family: "Edu VIC WA NT Beginner", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Navbar container */
+nav {
+    display: inline-block;
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 3;
+    border-bottom: 1px solid lightseagreen;
+    overflow: hidden;
+}
+
+/* Links inside the navbar */
+nav a {
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-icon {
+    height: 75px;
+    width: auto;
+    float: left;
+    padding: 0 10px;
+}
+
+/*Learn how to create a dropdown list for the nav menu for use with mobile device*/
+
+/* The dropdown container */
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+/* Dropdown button */  
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit; /* Important for vertical align on mobile phones */
+margin: 0; /* Important for vertical align on mobile phones */
+}  
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    float: none;
+    color: lightseagreen;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+  }
+
+ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    width: 80px;
+    overflow: hidden;
+
+  }
+
+li {
+    display: inline;
+    line-height: 75px;
+    padding: 15px;
+  }
+
+li a {
+    width: 90px;
+    font-size: 1.25em;
+    background-color: black;
+    border: 2px solid lightseagreen;
+    padding: 5px;
+  }
+li a:hover {
+    background-color: lightseagreen;
+    opacity: 70%;
+}
+
+li a:visited {
+    color: blue;
+}
+
+body {
+    background-color: black;
+    padding: 0 20;
+}
+
+/*banner with background img*/
+.banner {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 1100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+    background: url(images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    top: 75px;
+    overflow: hidden;
+}
+
+.star-div h1, .star-div h2, .star-div h3 {
+    filter: drop-shadow(4px 2px black);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 100px;
+    background: linear-gradient(to right, lightseagreen, HotPink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 75px;
+    background: linear-gradient(to right, lightseagreen, HotPink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h3 {
+    font-size: 50px;
+    margin-bottom: 25%;
+    background: linear-gradient(to right, lightseagreen, HotPink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*Header for club mission and past events*/
+.header1 {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 900px;
+    background-color: black;
+    color: lightseagreen;
+    position: relative;
+    top: 75px;
+    margin: auto;
+}
+
+.club-mission {
+    display: block;
+    min-height: auto;
+    width: auto;
+    max-width: 900px;
+    padding: 0 20px;
+    margin-top: 3%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+p  {
+    color: lightseagreen;
+}
+
+h4 {
+    color: lightseagreen;
+    font-size: 1.3em;
+}
+
+/*main element holding grid-divs*/
+main {
+    display: grid;
+    height: 10%;
+    width: 70%;
+    background-color: black;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 75px;
+    margin: 2rem auto;
+}
+
+ /*grid-template-rows: 1fr 1fr 1fr;
+ grid-template-columns:
+grid-row-gap: 5px;
+align-self:*/
+
+.gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 10vw);
+    grid-gap: 1.5rem;
+}
+
+h5 {
+    color:lightseagreen;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3em;
+    margin-left: 10px;
+ }
+
+h6 {
+    color: lightseagreen;
+    padding-left: 10px;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ 
+h7 {
+    color:lightseagreen;
+    padding-left: 10px;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header2 {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 900px;
+    background-color: black;
+    color: lightseagreen;
+    margin: auto;
+}
+.form-header {
+    display: block;
+    min-height: auto;
+    width: auto;
+    max-width: 900px;
+    padding: 0 20px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+form {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 570px;
+    background-color: black;
+    color: lightseagreen;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*footer and social media icons/link to unsplash*/
+footer {
+    display: block;
+    background-color: black;
+    color: lightseagreen;
+    height: 165px;
+    width: auto;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.unsplash-span {
+    padding-left: 10px;
+}
+
+.unsplash {
+    color: blue;
+    padding: 5px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*media quarries for gallery imgs: 4 rows, 3 cols; also banner font sizes*/
+@media only screen and (min-width: 1900px) {
+    h1, h2, h3 {
+        font-size: 450%;
+    }
+    h3 {
+        margin-bottom: 25%;
+    }
+}
+@media only screen and (max-width: 1900px) {
+    h1, h2, h3 {
+        font-size: 450%;
+    }
+    h3 {
+        margin-bottom: 25%;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 15vw);
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    h1, h2, h3 {
+        font-size: 450%;
+    }
+}
+@media only screen and (max-width: 1230px) {
+    h1, h2, h3 {
+        font-size: 450%;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 20vw);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    h1, h2, h3 {
+        font-size: 400%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    h1, h2, h3 {
+        font-size: 300%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    h1, h2, h3 {
+        font-size: 200%;
+    }
+    h4, p {
+        font-size: 95%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1, h2, h3 {
+        font-size: 150%;
+    }
+    h4, p {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h1, h2, h3 {
+        font-size: 140%;
+    }
+    h4, p {
+        font-size: 90%;
+    }
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 20vw);
+    }
+}
+
+/*media quaries for img gallery: row 1, cols 4*/
+@media only screen and (max-width: 790px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 42vw);
+    }
+}
+
+/*media quaries for the gallery header*/
+
+@media only screen and (max-width: 240px) {
+    header {
+        min-height: auto;
+    }
+    .club-mission {
+        height: auto;
+    }
+}
+ /*Drop down nav menu*/
+ button {
+    background-color: lightseagreen;
+}
+/*Drop down nav menu*/
+.dropbtn {
+    background-color: lightseagreen;
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/*Drop down nav menu*/
+.dropbtn:hover {
+    .page-menu {
+        background-color: lightseagreen;
+    }
+}
+/*Drop down nav menu*/
+.dropbtn:active {
+    border: 1px solid lightseagreen;
+}
+/*Drop down nav menu*/
+@media only screen and (max-width: 752px) {
+    .nav-link-buttons {
+        display: none;
+    }    
+}
+/*Drop down nav menu*/
+@media only screen and (min-width: 752px) {
+    .dropdown {
+        display: none;
+    }   
+     
+}
+/*Drop down nav menu*/
+@media only screen and (max-width: 980px) {
+    .page-menu {
+        width: 35px;
+        height: 5px;
+        background-color: lightseagreen;
+        margin: 7px 0;
+        margin-left: 10px;
+    }
+}
